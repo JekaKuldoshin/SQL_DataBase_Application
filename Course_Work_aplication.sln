@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course_Work_aplication", "Course_Work_aplication.csproj", "{19B14E73-F065-4D1D-A344-FE471877F51B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_JK_FastClean", "..\Setup_JK_FastClean\Setup_JK_FastClean.vdproj", "{A2029662-DD7C-4B0C-9661-6577BCA70B9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19B14E73-F065-4D1D-A344-FE471877F51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B14E73-F065-4D1D-A344-FE471877F51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B14E73-F065-4D1D-A344-FE471877F51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B14E73-F065-4D1D-A344-FE471877F51B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2029662-DD7C-4B0C-9661-6577BCA70B9C}.Debug|Any CPU.ActiveCfg = Debug
+		{A2029662-DD7C-4B0C-9661-6577BCA70B9C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CF0998F-79F5-4697-8DC4-06BE95D630FF}
+	EndGlobalSection
+EndGlobal

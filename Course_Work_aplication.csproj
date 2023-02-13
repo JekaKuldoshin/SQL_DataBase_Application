@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19B14E73-F065-4D1D-A344-FE471877F51B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Course_Work_aplication</RootNamespace>
+    <AssemblyName>JK-Fast&amp;Clean</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\Client_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Client_Form.Designer.cs">
+      <DependentUpon>Client_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\AddDataClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\AddDataClient.Designer.cs">
+      <DependentUpon>AddDataClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ChangeDataClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ChangeDataClient.Designer.cs">
+      <DependentUpon>ChangeDataClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\SearchDataClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\SearchDataClient.Designer.cs">
+      <DependentUpon>SearchDataClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coursework_Add_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Coursework_Add_DataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Order\AddDataOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\AddDataOrder.Designer.cs">
+      <DependentUpon>AddDataOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ChangeDataOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\ChangeDataOrder.Designer.cs">
+      <DependentUpon>ChangeDataOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Dnepr\Search_Dn1_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Dnepr\Search_Dn1_Cleaner.Designer.cs">
+      <DependentUpon>Search_Dn1_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Kharkov\Search_KH2_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Kharkov\Search_KH2_Cleaner.Designer.cs">
+      <DependentUpon>Search_KH2_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Kharkov\Search_KH1_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Kharkov\Search_KH1_Cleaner.Designer.cs">
+      <DependentUpon>Search_KH1_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev1_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev1_Cleaner.Designer.cs">
+      <DependentUpon>Search_Kiev1_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev2_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev2_Cleaner.Designer.cs">
+      <DependentUpon>Search_Kiev2_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev3_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Kiev\Search_Kiev3_Cleaner.Designer.cs">
+      <DependentUpon>Search_Kiev3_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Lviv\Search_Lv1_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Lviv\Search_Lv1_Cleaner.Designer.cs">
+      <DependentUpon>Search_Lv1_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Odessa\Search_Od1_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Odessa\Search_Od1_Cleaner.Designer.cs">
+      <DependentUpon>Search_Od1_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\Odessa\Search_Od2_Cleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\Odessa\Search_Od2_Cleaner.Designer.cs">
+      <DependentUpon>Search_Od2_Cleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Search\SearchDataOrder_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Search\SearchDataOrder_Client.Designer.cs">
+      <DependentUpon>SearchDataOrder_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\Order_Form.Designer.cs">
+      <DependentUpon>Order_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\AddDataStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\AddDataStaff.Designer.cs">
+      <DependentUpon>AddDataStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\ChangeDataStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\ChangeDataStaff.Designer.cs">
+      <DependentUpon>ChangeDataStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\SearchDataStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\SearchDataStaff.Designer.cs">
+      <DependentUpon>SearchDataStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Staff_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff_Form.Designer.cs">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client\AddDataClient.resx">
+      <DependentUpon>AddDataClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\ChangeDataClient.resx">
+      <DependentUpon>ChangeDataClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Client_Form.resx">
+      <DependentUpon>Client_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\SearchDataClient.resx">
+      <DependentUpon>SearchDataClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\AddDataOrder.resx">
+      <DependentUpon>AddDataOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ChangeDataOrder.resx">
+      <DependentUpon>ChangeDataOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Dnepr\Search_Dn1_Cleaner.resx">
+      <DependentUpon>Search_Dn1_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Kharkov\Search_KH1_Cleaner.resx">
+      <DependentUpon>Search_KH1_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Kharkov\Search_KH2_Cleaner.resx">
+      <DependentUpon>Search_KH2_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Kiev\Search_Kiev1_Cleaner.resx">
+      <DependentUpon>Search_Kiev1_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Kiev\Search_Kiev2_Cleaner.resx">
+      <DependentUpon>Search_Kiev2_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Kiev\Search_Kiev3_Cleaner.resx">
+      <DependentUpon>Search_Kiev3_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Lviv\Search_Lv1_Cleaner.resx">
+      <DependentUpon>Search_Lv1_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Odessa\Search_Od1_Cleaner.resx">
+      <DependentUpon>Search_Od1_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\Odessa\Search_Od2_Cleaner.resx">
+      <DependentUpon>Search_Od2_Cleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Search\SearchDataOrder_Client.resx">
+      <DependentUpon>SearchDataOrder_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Order_Form.resx">
+      <DependentUpon>Order_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\AddDataStaff.resx">
+      <DependentUpon>AddDataStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\ChangeDataStaff.resx">
+      <DependentUpon>ChangeDataStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\SearchDataStaff.resx">
+      <DependentUpon>SearchDataStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff_Form.resx">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Coursework_Add_DataBaseDataSet.xsc">
+      <DependentUpon>Coursework_Add_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Coursework_Add_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Coursework_Add_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Coursework_Add_DataBaseDataSet.xss">
+      <DependentUpon>Coursework_Add_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
